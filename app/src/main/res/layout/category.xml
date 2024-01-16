@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="96dp"
+    android:layout_height="123dp"
+    android:layout_margin="3dp"
+    app:cardCornerRadius="15dp"
+    app:cardBackgroundColor="@color/black">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="96dp"
+        android:layout_height="123dp"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:id="@+id/centeredLayout"
+            android:layout_width="96dp"
+            android:layout_height="123dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingTop="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0">
+
+            <ImageView
+                android:id="@+id/header_image"
+                android:layout_width="59dp"
+                android:layout_height="53dp"
+                android:src="@drawable/pizza"
+                app:layout_constraintBottom_toTopOf="@id/textView"
+                app:layout_constraintTop_toTopOf="@id/centeredLayout" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="86dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:fontFamily="@font/abhaya_libre_extrabold"
+                android:gravity="center"
+                android:text="Donut"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/header_image" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="34dp"
+                android:layout_height="29dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/button_arrow"
+                android:minHeight="48dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textView" />
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
