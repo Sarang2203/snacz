@@ -21,6 +21,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".ProfileActivity" />
+        <activity android:name=".CartActivity" />
+        <activity android:name=".OfferActivity" />
+        <activity android:name=".HomeActivity" />
+        <activity android:name=".SearchActivity" />
+        <activity android:name=".DetailsActivity"/>
+
+
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />

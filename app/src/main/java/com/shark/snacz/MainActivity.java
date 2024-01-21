@@ -2,6 +2,7 @@ package com.shark.snacz;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -27,6 +28,10 @@ public class MainActivity extends AppCompatActivity {
         LinearLayoutManager descriptionLayoutManager = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
         descriptionRecyclerView.setAdapter(descriptionAdapter);
         descriptionRecyclerView.setLayoutManager(descriptionLayoutManager);
+
+        // Initialize NavbarHandler and set click listeners
+        View navBarView = findViewById(R.id.navBar);
+        NavbarHandler navbarHandler = new NavbarHandler(this);
+        navbarHandler.setNavbarClickListeners(navBarView);
     }
 }
-
