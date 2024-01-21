@@ -28,6 +28,8 @@
         <activity android:name=".HomeActivity" />
         <activity android:name=".SearchActivity" />
         <activity android:name=".DetailsActivity"/>
+        <activity android:name=".ProductPageActivity" />
+
 
 
         <meta-data
