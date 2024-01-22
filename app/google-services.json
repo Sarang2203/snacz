@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "888561403851",
+    "project_id": "snacz-tybbaca",
+    "storage_bucket": "snacz-tybbaca.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:888561403851:android:3ab059f3106d4a401e984e",
+        "android_client_info": {
+          "package_name": "com.shark.snacz"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDqz8Bma7U9lRBibMhxy8zNgIwBUNIkw1E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
