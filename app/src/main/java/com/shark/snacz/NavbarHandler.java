@@ -44,7 +44,7 @@ public class NavbarHandler {
         homeImageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                openActivity(HomeActivity.class);
+                openActivity(MainActivity.class);
             }
         });
 
