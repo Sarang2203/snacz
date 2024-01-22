@@ -1,9 +1,12 @@
 package com.shark.snacz;
 
 import android.os.Bundle;
+import android.widget.ImageView;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -26,6 +29,12 @@ public class ProfileActivity extends AppCompatActivity {
 
         // Set the layout manager
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
+
+        // Assuming "imageView" is the ID of your ImageView defined in your layout XML
+        ImageView backButton = findViewById(R.id.imageView);
+
+        // Set a click listener for the backButton
+        backButton.setOnClickListener(view -> onBackPressed());
     }
 
     private List<OrderedProduct> generateOrderedProducts() {
@@ -34,9 +43,9 @@ public class ProfileActivity extends AppCompatActivity {
         products.add(new OrderedProduct("Donut", "Sparkel Donut", "Rs.200"));
         products.add(new OrderedProduct("Donut", "Sparkel Donut", "Rs.200"));
         products.add(new OrderedProduct("Donut", "Sparkel Donut", "Rs.200"));
-        products.add(new OrderedProduct("Donut", "Sparkel Donut", "Rs.200"));products.add(new OrderedProduct("Donut", "Sparkel Donut", "Rs.200"));
         products.add(new OrderedProduct("Donut", "Sparkel Donut", "Rs.200"));
-
+        products.add(new OrderedProduct("Donut", "Sparkel Donut", "Rs.200"));
+        products.add(new OrderedProduct("Donut", "Sparkel Donut", "Rs.200"));
 
         // Add more products as needed
         return products;

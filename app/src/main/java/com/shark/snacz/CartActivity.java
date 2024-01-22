@@ -4,10 +4,13 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
+
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -41,5 +44,11 @@ public class CartActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        // Assuming "imageView" is the ID of your ImageView defined in your layout XML
+        ImageView backButton = findViewById(R.id.imageView);
+
+        // Set a click listener for the backButton
+        backButton.setOnClickListener(view -> onBackPressed());
     }
 }
